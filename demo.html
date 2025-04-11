@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepto UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+        .header {
+            background: linear-gradient(to right, #ffffff, #f8f8f8);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header h1 {
+            font-size: 18px;
+            color: #4a148c;
+        }
+        .header span {
+            color: black;
+        }
+        .location {
+            font-size: 14px;
+            color: gray;
+        }
+        .free-cash {
+            background: #ff4081;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+        .zepto {
+            background: purple;
+        }
+        .cafe {
+            background: orange;
+        }
+        .lowest-prices {
+            background: green;
+        }
+        .fruits {
+            background: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div>
+            <h1>Delivery In <span style="color: purple;">5 Mins</span></h1>
+            <p class="location">Other - Puttanahalli, Bengaluru</p>
+        </div>
+        <div class="free-cash">₹50 FREE CASH</div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item zepto">Zepto<br>No Minimum Order Value</div>
+        <div class="grid-item cafe">Zepto Café<br>Food from ₹39</div>
+        <div class="grid-item lowest-prices">Lowest Prices<br>No delivery fee • No surge fee<br>Min Order ₹249</div>
+        <div class="grid-item fruits">Sabse Sasta, Sabse Fresh<br>One stop for Fruits & Veggies!</div>
+    </div>
+
+</body>
+</html>
